@@ -1,0 +1,55 @@
+"use client";
+import Image from "next/image";
+
+function HeroBigImages() {
+  return (
+    <div className=" grid grid-cols-1 lg:grid-cols-2 mx-3 gap-2 mt-[2rem] p-6">
+      <div className=" relative h-[25rem] w-full aspect-square ">
+        <Image
+          src={"/image-hero-1.jpg"}
+          alt="hero-image"
+          sizes="100%"
+          fill
+          className="rounded-xl"
+        />
+      </div>
+
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className=" grid md:grid-cols-1 sm:grid-cols-2 gap-2">
+          <div className=" bg-orange rounded-xl p-4">
+            <div className=" flex">
+              <div className=" w-10 h-10  border rounded-full">1</div>
+              <div className=" w-10 h-10  border rounded-full">2</div>
+              <div className=" w-10 h-10  border rounded-full">3</div>
+              <div className=" w-10 h-10  border rounded-full">4</div>
+            </div>
+            <h1 className=" text-[1.1rem] font-semibold mt-8">
+              We have 40+ Professional Teachers
+            </h1>
+          </div>
+          <div className="bg-green rounded-xl gap-4 p-4 flex flex-col justify-between">
+            <q className=" text-[1.1rem] font-bold">
+              “Believe in yourself, keep learning, and and success will follow.”
+            </q>
+            <div>
+              <h1 className=" font-semibold text-xl">Mathew S.</h1>
+              <p>Quote from our teacher</p>
+            </div>
+          </div>
+        </div>
+
+        <div className=" relative h-[25rem] w-full">
+          <Image
+            src={"/image-hero-2.jpg"}
+            alt="hero-image"
+            sizes="100%"
+            fill
+            className="rounded-xl"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default HeroBigImages;
