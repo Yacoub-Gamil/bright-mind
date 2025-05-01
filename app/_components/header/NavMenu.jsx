@@ -36,10 +36,10 @@ function NavMenu() {
         width: 0,
         display: "none",
         duration: 0.2,
-        delay: 0.3,
+        delay: 0.6,
       });
       gsap.to("#links", {
-        duration: 0.2,
+        duration: 0.4,
         opacity: 0,
         scale: 0,
       });
@@ -66,7 +66,7 @@ function NavMenu() {
         <div className=" flex justify-center items-center h-full  ">
           <div
             id="links"
-            className=" flex flex-col scale-0 opacity-0 items-center justify-center gap-8 capitalize text-3xl"
+            className=" flex flex-col scale-0 opacity-0 items-center justify-center gap-8 capitalize text-2xl"
           >
             {navLinks.map((link) => (
               <Link
