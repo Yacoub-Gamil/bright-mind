@@ -7,18 +7,18 @@ import NavMenu from "./NavMenu";
 
 function Header() {
   return (
-    <div className=" container mx-auto sticky z-50 top-0  bg-white p-6 shadow-[0px_0.5px_0px_0px_rgba(0,_0,_0,_0.1)] flex items-center justify-between">
+    <div className="flex container  justify-between bg-white top-0 z-50  sticky shadow-[0px_0.5px_0px_0px_rgba(0,_0,_0,_0.1)] mx-auto p-6 w- maxitems-center">
       <Logo />
       <NavBar />
       <Link
         href="/contact-us"
-        className=" lg:text-xl rounded-l-full bg-primary hidden md:block text-white hover:bg-secondary duration-300 py-2 px-4 "
+        className="hidden md:block bg-primary hover:bg-secondary px-4 py-2 rounded-l-full text-white lg:text-xl duration-300"
       >
         contact us
       </Link>
 
       {/* NavMenu  */}
-      <div className="md:hidden z-50 ">
+      <div className="md:hidden z-50">
         <NavMenu />
       </div>
     </div>

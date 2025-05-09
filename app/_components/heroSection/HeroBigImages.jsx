@@ -16,7 +16,7 @@ function HeroBigImages() {
 
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-2">
         <div className=" grid md:grid-cols-1 sm:grid-cols-2 gap-2">
-          <div className=" bg-orange rounded-xl p-6">
+          <div className=" bg-orange rounded-xl p-2">
             <div className=" flex">
               <div className=" w-10 h-10 relative  border-[2px] border-white mx-[-4px] rounded-full">
                 <Image src={"/profile-1.png"} alt="" fill sizes="100%" />
@@ -35,8 +35,8 @@ function HeroBigImages() {
               We have 40+ Professional Teachers
             </h1>
           </div>
-          <div className="bg-green rounded-xl gap-4 justify-between p-6 flex flex-col ">
-            <q className="text-[1rem] lg:text-[1.1rem] font-bold">
+          <div className="bg-green rounded-xl gap-2 justify-between p-6 flex flex-col ">
+            <q className="text-[1rem]  font-bold">
               Believe in yourself, keep learning, and and success will follow.
             </q>
             <div>
