@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 import { LuPlus } from "react-icons/lu";
 
 function FrequentlyQuestions({ questions, index }) {
@@ -11,16 +12,16 @@ function FrequentlyQuestions({ questions, index }) {
       <div
         className={` overflow-hidden ${
           !isOpen
-            ? "h-[3.5rem] duration-500 bg-stone-50"
+            ? "h-[4rem] duration-500 bg-stone-50"
             : "h-full bg-primary text-white"
         } capitalize duration-500 cursor-pointer  p-4 rounded-2xl`}
         onClick={() => setIsOpen((open) => !open)}
       >
-        <div className=" text-xl flex items-center justify-between">
-          <h1 className="">{question}</h1>
-          <LuPlus />
+        <div className="  text-[1rem] md:text-xl flex items-center justify-between">
+          <h1 className=" font-semibold">{question}</h1>
+          {!isOpen ? <LuPlus /> : <IoMdClose />}
         </div>
-        <div className=" duration-300 border-t-[0.1px] mt-[1rem] p-4">
+        <div className=" mt-[1.6rem] duration-300 border-t-[0.1px]  p-4">
           {answer}
         </div>
       </div>
