@@ -4,11 +4,11 @@ import Testimonial from "../_components/testimonial/Testimonial";
 
 function page() {
   return (
-    <div className="">
+    <>
       <HeroSection />
       <MostPopularSection />
       <Testimonial />
-    </div>
+    </>
   );
 }
 

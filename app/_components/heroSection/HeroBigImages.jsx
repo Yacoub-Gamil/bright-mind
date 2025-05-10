@@ -3,13 +3,14 @@ import Image from "next/image";
 
 function HeroBigImages() {
   return (
-    <div className=" grid grid-cols-1 lg:grid-cols-2 lg:max-w-[90%] mx-auto gap-2 lg:mt-[6rem] mt-[2rem] p-6">
+    <div className=" grid grid-cols-1 lg:grid-cols-2 lg:max-w-[80%] mx-auto gap-2 lg:mt-[6rem] mt-[2rem] p-6">
       <div className=" relative h-[25rem] w-full aspect-square ">
         <Image
           src={"/image-hero-1.jpg"}
           alt="hero-image"
           sizes="100%"
           fill
+          priority={80}
           className="rounded-xl"
         />
       </div>

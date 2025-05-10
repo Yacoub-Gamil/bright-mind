@@ -7,6 +7,7 @@ import { PiHandbagFill } from "react-icons/pi";
 function HeroSlider() {
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -15,7 +16,7 @@ function HeroSlider() {
   };
 
   return (
-    <div className=" grid grid-cols-1 md:max-w-[90%] mx-auto lg:grid-cols-2 gap-6 p-4">
+    <div className=" grid grid-cols-1 md:max-w-[80%] mx-auto p-4 lg:grid-cols-2 gap-6 ">
       <div className=" text-3xl md:text-5xl font-semibold md:flex justify-center items-center">
         <h1 className=" italic ">
           Explore Course <br />
