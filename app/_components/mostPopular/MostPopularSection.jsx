@@ -5,8 +5,8 @@ import { courses } from "./data";
 function MostPopularSection() {
   return (
     <section className="bg-[#f7f7f7] mt-[6rem] p-4">
-      <div className="container mx-auto p-8">
-        <div className=" mt-[4rem] flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div className=" max-w-[80%] mx-auto p-8">
+        <div className=" mt-[4rem] flex  flex-col md:flex-row md:items-center md:justify-between gap-6">
           <h1 className=" text-3xl md:text-5xl font-semibold">
             Most Popular <span className=" text-primary">Courses</span>
           </h1>

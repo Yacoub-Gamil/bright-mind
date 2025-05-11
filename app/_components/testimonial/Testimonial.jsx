@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import FrequentlyQuestions from "./FrequentlyQuestions";
+import HeroSImages from "../heroSection/HeroSImages";
 
 const questions = [
   {
@@ -180,6 +181,7 @@ function Testimonial() {
               <span className=" text-primary font-bold">Questions</span>
             </h1>
           </div>
+
           <div className=" grid grid-cols-1 gap-4">
             {questions.map((question, index) => (
               <FrequentlyQuestions
@@ -189,6 +191,21 @@ function Testimonial() {
               />
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className=" mx-auto md:max-w-[80%] bg-primary p-8 rounded-xl mt-[4rem]">
+        <h1 className=" text-center font-semibold text-white text-2xl md:text-3xl lg:text-4xl">
+          Take the First Step –{" "}
+          <span className=" bg-white text-primary p-1 italic"> Start Learning Today!</span>
+        </h1>
+        <div className=" flex justify-center mt-[2rem]">
+          <Link
+            href="/contactus"
+            className="capitalize px-4 py-2 rounded-full bg-white hover:bg-black hover:text-white duration-300"
+          >
+            contact use
+          </Link>
         </div>
       </div>
     </section>
