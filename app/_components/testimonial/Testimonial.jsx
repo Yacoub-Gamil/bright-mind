@@ -194,10 +194,13 @@ function Testimonial() {
         </div>
       </div>
 
-      <div className=" mx-auto md:max-w-[80%] bg-primary p-8 rounded-xl mt-[4rem]">
+      <div className=" mx-auto md:max-w-[80%] flex flex-col items-center justify-center h-[40vh] bg-primary p-8 rounded-xl mt-[4rem]">
         <h1 className=" text-center font-semibold text-white text-2xl md:text-3xl lg:text-4xl">
           Take the First Step –{" "}
-          <span className=" bg-white text-primary p-1 italic"> Start Learning Today!</span>
+          <span className=" bg-white text-primary p-1 italic">
+            {" "}
+            Start Learning Today!
+          </span>
         </h1>
         <div className=" flex justify-center mt-[2rem]">
           <Link

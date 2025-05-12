@@ -1,5 +1,11 @@
+import About from "@/app/_components/AboutSection/About";
+
 function page() {
-  return <div>about</div>;
+  return (
+    <>
+      <About />
+    </>
+  );
 }
 
 export default page;
