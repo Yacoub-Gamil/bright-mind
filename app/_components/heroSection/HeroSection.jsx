@@ -3,10 +3,28 @@ import Link from "next/link";
 import HeroSImages from "./HeroSImages";
 import HeroBigImages from "./HeroBigImages";
 import HeroSlider from "./HeroSlider";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function HeroSection() {
+  useGSAP(() => {
+    gsap.fromTo(
+      "#heroSection",
+      {
+        opacity: 0,
+        y: 40,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: "power2.inOut",
+      }
+    );
+  }, []);
+
   return (
-    <section className=" container mx-auto">
+    <section id="heroSection" className=" opacity-0 container mx-auto">
       <div className=" relative p-4 flex justify-center md:mt-[3rem] lg:mt-[6rem]">
         {/* the sides images in the hero section  */}
         <HeroSImages />

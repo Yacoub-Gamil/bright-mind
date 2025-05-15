@@ -1,10 +1,27 @@
+"use client";
 import Link from "next/link";
 import MostPopularCard from "./MostPopularCard";
-import { courses } from "./data";
+import { useEffect, useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function MostPopularSection() {
+  const [courses, setCourses] = useState();
+  useEffect(() => {
+    async function courses() {
+      try {
+        const data = await fetch("data.json");
+        const res = await data.json(data);
+        setCourses(res.courses);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    courses();
+  }, []);
+
   return (
-    <section className="bg-[#f7f7f7] mt-[6rem] p-4">
+    <section className=" bg-[#f7f7f7] mt-[6rem] p-4">
       <div className=" max-w-[80%] mx-auto p-8">
         <div className=" mt-[4rem] flex  flex-col md:flex-row md:items-center md:justify-between gap-6">
           <h1 className=" text-3xl md:text-5xl font-semibold">
@@ -22,7 +39,7 @@ function MostPopularSection() {
       </div>
       {/* Courses Section  */}
       <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 mx-auto md:max-w-[80%]  gap-2 mt-[4rem] mb-[4rem] ">
-        {courses.map((course) => (
+        {courses?.map((course) => (
           <MostPopularCard
             key={course.userImage}
             image={course.image}

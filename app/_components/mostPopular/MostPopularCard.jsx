@@ -5,8 +5,12 @@ import Link from "next/link";
 import { IoBookOutline, IoStarSharp } from "react-icons/io5";
 import { CiClock2 } from "react-icons/ci";
 import { MdOutlineSchool } from "react-icons/md";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function MostPopularCard({
+  active,
+  id,
   image,
   title,
   numLesson,
@@ -17,8 +21,23 @@ function MostPopularCard({
   userImage,
   price,
 }) {
+  useGSAP(() => {
+    gsap.fromTo(
+      "#card",
+      {
+        opacity: 0,
+        x: -10,
+      },
+      {
+        opacity: 1,
+        duration: 0.5,
+        x: 0,
+      }
+    );
+  }, [active]);
+
   return (
-    <Link href={""} className=" bg-white p-4 rounded-2xl ">
+    <Link id={id} href={""} className=" bg-white p-4 rounded-2xl ">
       <div className=" flex flex-col gap-8">
         <div className=" relative w-full h-[15rem] overflow-hidden rounded-2xl">
           <Image

@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function HeroBigImages() {
   return (
-    <div className=" grid grid-cols-1 lg:grid-cols-2 lg:max-w-[80%] mx-auto gap-2 lg:mt-[6rem] mt-[2rem] p-6">
-      <div className=" relative h-[25rem] w-full aspect-square ">
+    <div className=" grid grid-cols-1 lg:grid-cols-2 lg:max-w-[90%] mx-auto gap-2 lg:mt-[6rem] mt-[2rem] p-6">
+      <div className=" relative h-[30rem] w-full aspect-square ">
         <Image
           src={"/image-hero-1.jpg"}
           alt="hero-image"
@@ -17,8 +17,8 @@ function HeroBigImages() {
 
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-2">
         <div className=" grid md:grid-cols-1 sm:grid-cols-2 gap-2">
-          <div className=" bg-orange rounded-xl p-2">
-            <div className=" flex">
+          <div className=" bg-orange rounded-xl p-4">
+            <div className=" flex ">
               <div className=" w-10 h-10 relative  border-[2px] border-white mx-[-4px] rounded-full">
                 <Image src={"/profile-1.png"} alt="" fill sizes="100%" />
               </div>
@@ -47,7 +47,7 @@ function HeroBigImages() {
           </div>
         </div>
 
-        <div className=" relative h-[25rem] w-full">
+        <div className=" relative h-[30rem] w-full">
           <Image
             src={"/image-hero-2.jpg"}
             alt="hero-image"

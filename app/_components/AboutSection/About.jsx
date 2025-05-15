@@ -1,11 +1,27 @@
 "use client";
-
 import Image from "next/image";
 import OurTeam from "./OurTeam";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 function About() {
+  useGSAP(() => {
+    gsap.fromTo(
+      "#aboutSection",
+      {
+        opacity: 0,
+        y: 40,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: "power2.inOut",
+      }
+    );
+  }, []);
   return (
-    <section className="  ">
+    <section id="aboutSection" className=" opacity-0  ">
       <div className=" container mt-[2rem] mx-auto p-4 flex flex-col gap-8">
         <div className=" flex flex-col gap-8 items-center">
           <h1 className=" text-4xl md:text-5xl lg:text-6xl font-semibold">
@@ -52,11 +68,12 @@ function About() {
             </div>
           </div>
         </div>
-        <div>
+
+        <div className="">
           <h1 className=" text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
             Our Core <span className=" text-primary">Values</span>
           </h1>
-          <div className=" flex flex-wrap gap-8 flex-col md:flex-row mt-[2rem] justify-center ">
+          <div className="flex justify-center gap-2 flex-wrap  flex-col md:flex-row mt-[2rem]">
             <div className="  bg-light-blue rounded-xl p-4">
               <h1 className=" w-10 h-10 rounded-full bg-stone-50 mb-[2rem]"></h1>
               <strong className=" md:text-xl lg:text-2xl">
@@ -103,19 +120,19 @@ function About() {
 
             <div className=" flex flex-col  text-xl gap-4 lg:gap-6">
               <h1 className=" flex gap-1 items-center">
-                <spain className="h-2 w-2 rounded-full bg-primary block"></spain>
+                <span className="h-2 w-2 rounded-full bg-primary block" />
                 Expert-led, practical courses for all skill levels.
               </h1>
               <h1 className=" flex gap-1 items-center">
-                <spain className="h-2 w-2 rounded-full bg-primary block"></spain>
+                <span className="h-2 w-2 rounded-full bg-primary block" />
                 Flexible learning anytime, anywhere.
               </h1>
               <h1 className=" flex gap-1 items-center">
-                <spain className="h-2 w-2 rounded-full bg-primary block"></spain>
+                <span className="h-2 w-2 rounded-full bg-primary block" />
                 Join a community of passionate learners.
               </h1>
               <h1 className=" flex gap-1 items-center">
-                <spain className="h-2 w-2 rounded-full bg-primary block"></spain>
+                <span className="h-2 w-2 rounded-full bg-primary block" />
                 Career-focused skills for real-world success.
               </h1>
             </div>
@@ -146,15 +163,15 @@ function About() {
 
             <div className=" flex flex-col text-xl gap-4 lg:gap-6">
               <h1 className=" flex gap-1 items-center">
-                <spain className="h-2 w-2 rounded-full bg-primary block"></spain>
+                <span className="h-2 w-2 rounded-full bg-primary block" />
                 Learn from industry professionals with real-world.
               </h1>
               <h1 className=" flex gap-1 items-center">
-                <spain className="h-2 w-2 rounded-full bg-primary block"></spain>
+                <span className="h-2 w-2 rounded-full bg-primary block" />
                 Study anytime, anywhere, at your own pace.
               </h1>
               <h1 className=" flex gap-1 items-center">
-                <spain className="h-2 w-2 rounded-full bg-primary block"></spain>
+                <span className="h-2 w-2 rounded-full bg-primary block" />
                 Gain practical knowledge to advance in your field.
               </h1>
             </div>
