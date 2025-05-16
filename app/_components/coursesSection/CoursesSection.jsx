@@ -32,7 +32,7 @@ function CoursesSection() {
 
   return (
     <div className=" ">
-      <div className=" p-4 bg-stone-50 lg:max-w-[60%] mx-auto rounded-2xl flex justify-between mt-8">
+      <div className=" p-4 text-[.7rem] md:text-xl bg-stone-50 lg:max-w-[60%] mx-auto rounded-2xl flex justify-between mt-8">
         {buttons.map((button) => (
           <button
             className={`cursor-pointer capitalize py-1 px-3 ${
