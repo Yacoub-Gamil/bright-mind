@@ -70,35 +70,59 @@ function About() {
         </div>
 
         <div className="">
-          <h1 className=" text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
+          <h1 className=" text-3xl md:text-4xl lg:text-5xl font-semibold text-center">
             Our Core <span className=" text-primary">Values</span>
           </h1>
           <div className="flex justify-center gap-2 flex-wrap  flex-col md:flex-row mt-[2rem]">
             <div className="  bg-light-blue rounded-xl p-4">
-              <h1 className=" w-10 h-10 rounded-full bg-stone-50 mb-[2rem]"></h1>
+              <Image
+                src="/about/image-1.svg"
+                alt=""
+                width={40}
+                height={20}
+                className=" mb-4 "
+              />
               <strong className=" md:text-xl lg:text-2xl">
                 Community First
               </strong>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div className=" bg-light-orange rounded-xl p-4">
-              <h1 className=" w-10 h-10 rounded-full bg-stone-50 mb-[2rem]"></h1>
+              <Image
+                src="/about/image-2.svg"
+                alt=""
+                width={40}
+                height={20}
+                className=" mb-4 "
+              />
               <strong className=" md:text-xl lg:text-2xl">
-                Community First
+                Cost-effectiveness
               </strong>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div className=" bg-light-green rounded-xl p-4">
-              <h1 className=" w-10 h-10 rounded-full bg-stone-50 mb-[2rem]"></h1>
+              <Image
+                src="/about/image-3.svg"
+                alt=""
+                width={40}
+                height={20}
+                className=" mb-4 "
+              />
               <strong className=" md:text-xl lg:text-2xl">
-                Community First
+                Course accessibility
               </strong>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div className=" bg-light-yellow rounded-xl p-4">
-              <h1 className=" w-10 h-10 rounded-full bg-stone-50 mb-[2rem]"></h1>
+              <Image
+                src="/about/image-4.svg"
+                alt=""
+                width={40}
+                height={20}
+                className=" mb-4 "
+              />
               <strong className=" md:text-xl lg:text-2xl">
-                Community First
+                Personalized learning
               </strong>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>

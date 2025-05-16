@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { IoIosStar } from "react-icons/io";
 
+export const metadata = {
+  title: "course",
+};
+
 async function page({ params }) {
   const { id } = await params;
   const data = await fetch("http://localhost:3000/data.json");
@@ -8,7 +12,7 @@ async function page({ params }) {
   const coures = res?.courses?.find((course) => course.id == id);
 
   return (
-    <section className=" container mx-auto p-4">
+    <section className=" container mx-auto p-10">
       <div>
         <div className=" flex flex-col gap-4">
           <h1 className=" text-2xl md:text-3xl lg:text-4xl mt-[2rem] mb-[1.2rem] font-semibold text-center">

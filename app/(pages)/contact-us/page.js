@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "contact-us",
+};
+
 function page() {
   return (
     <section className="container mx-auto p-4">

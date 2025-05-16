@@ -2,7 +2,9 @@ import HeroSection from "../_components/heroSection/HeroSection";
 import MostPopularSection from "../_components/mostPopular/MostPopularSection";
 import Testimonial from "../_components/testimonial/Testimonial";
 
-async function page() {
+
+
+function page() {
   return (
     <>
       <HeroSection />

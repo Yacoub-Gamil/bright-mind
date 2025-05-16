@@ -1,5 +1,9 @@
 import CoursesSection from "@/app/_components/coursesSection/CoursesSection";
 
+export const metadata = {
+  title: "courses",
+};
+
 function page() {
   return (
     <section>
