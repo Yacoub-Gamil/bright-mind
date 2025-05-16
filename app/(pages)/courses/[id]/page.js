@@ -5,18 +5,27 @@ export const metadata = {
   title: "course",
 };
 
-async function page({ params }) {
-  const { id } = await params;
-  const data = await fetch("http://localhost:3000/data.json");
-  const res = await data.json();
-  const coures = res?.courses?.find((course) => course.id == id);
+const fakeCourse = {
+  id: 4,
+  image: "/mostPopular-Images/usersImages/image-4.jpg",
+  title: "Graphic Design Essentials: From Beginner to Pro Guide",
+  numLesson: 50,
+  numStudents: 512,
+  totalTime: 12,
+  rate: "4.7",
+  userName: "Darrell Steward",
+  userImage: "/mostPopular-Images/usersImages/user-4.png",
+  price: "45.00",
+  categray: "design",
+};
 
+function page({}) {
   return (
     <section className=" container mx-auto p-10">
       <div>
         <div className=" flex flex-col gap-4">
           <h1 className=" text-2xl md:text-3xl lg:text-4xl mt-[2rem] mb-[1.2rem] font-semibold text-center">
-            {coures.title}
+            {fakeCourse.title}
           </h1>
           <div className=" flex items-center gap-2 justify-center">
             <div className=" flex gap-1 text-yellow-400 ">
@@ -26,24 +35,24 @@ async function page({ params }) {
               <IoIosStar />
               <IoIosStar />
             </div>
-            <h1 className=" text-xl">{coures.numStudents} students</h1>
+            <h1 className=" text-xl">{fakeCourse.numStudents} students</h1>
           </div>
           <div className=" flex items-center gap-2 justify-center">
             <Image
-              src={coures.userImage}
+              src={fakeCourse.userImage}
               alt=""
               width={50}
               height={50}
               className=" rounded-full"
             />
-            <h1 className=" font-semibold text-xl">{coures.userName}</h1>
+            <h1 className=" font-semibold text-xl">{fakeCourse.userName}</h1>
           </div>
         </div>
         <div className=" mt-[2rem] lg:flex flex-row-reverse gap-4 relative">
           <div className=" bg-light-blue p-4 rounded-xl mb-[1rem] lg:sticky top-[6rem] h-fit w-full ">
             <div>
-              <h1 className=" mb-2">{coures.categray}</h1>
-              <strong>${coures.price} USD</strong>
+              <h1 className=" mb-2">{fakeCourse.categray}</h1>
+              <strong>${fakeCourse.price} USD</strong>
             </div>
             <div className=" border-[0.2px] mb-4 mt-4 " />
             <div className=" flex flex-col gap-4">
@@ -97,7 +106,7 @@ async function page({ params }) {
                     alt=""
                   />
                 </span>{" "}
-                Downloadable Files: {coures.numLesson}
+                Downloadable Files: {fakeCourse.numLesson}
               </h1>
               <h1 className=" flex items-center gap-2">
                 {" "}
@@ -120,7 +129,7 @@ async function page({ params }) {
 
           <div>
             <Image
-              src={coures.image}
+              src={fakeCourse.image}
               alt=""
               width={1000}
               height={1000}
