@@ -41,6 +41,7 @@ function MostPopularSection() {
       <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 mx-auto md:max-w-[80%]  gap-2 mt-[4rem] mb-[4rem] ">
         {courses?.map((course) => (
           <MostPopularCard
+            id={course.id}
             key={course.userImage}
             image={course.image}
             title={course.title}

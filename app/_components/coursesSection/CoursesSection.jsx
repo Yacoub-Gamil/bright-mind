@@ -50,7 +50,8 @@ function CoursesSection() {
       <div className="  p-4 rounded-2xl bg-stone-50 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 mx-auto lg:max-w-[80%]  gap-2 mt-[4rem] mb-[4rem] ">
         {coursesFilter?.map((course) => (
           <MostPopularCard
-            id="card"
+            name="card"
+            id={course.id}
             active={active}
             key={course.userImage}
             image={course.image}

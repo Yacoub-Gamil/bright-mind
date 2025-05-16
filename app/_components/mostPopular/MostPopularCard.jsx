@@ -11,6 +11,7 @@ import gsap from "gsap";
 function MostPopularCard({
   active,
   id,
+  name,
   image,
   title,
   numLesson,
@@ -37,7 +38,11 @@ function MostPopularCard({
   }, [active]);
 
   return (
-    <Link id={id} href={""} className=" bg-white p-4 rounded-2xl ">
+    <Link
+      id={name}
+      href={`/courses/${id}`}
+      className=" bg-white p-4 rounded-2xl "
+    >
       <div className=" flex flex-col gap-8">
         <div className=" relative w-full h-[15rem] overflow-hidden rounded-2xl">
           <Image

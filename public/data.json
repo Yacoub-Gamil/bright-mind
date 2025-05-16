@@ -1,6 +1,7 @@
 {
   "courses": [
     {
+      "id": 1,
       "image": "/mostPopular-Images/usersImages/image-1.jpg",
       "title": "Complete Digital Marketing Mastery Course",
       "numLesson": 40,
@@ -13,6 +14,7 @@
       "categray": "digital Markeing"
     },
     {
+      "id": 2,
       "image": "/mostPopular-Images/usersImages/image-2.jpg",
       "title": "Entrepreneurship & Business Growth Strategies Course",
       "numLesson": 47,
@@ -25,6 +27,7 @@
       "categray": "business"
     },
     {
+      "id": 3,
       "image": "/mostPopular-Images/usersImages/image-3.jpg",
       "title": "Full-Stack Web Development Bootcamp Program",
       "numLesson": 32,
@@ -37,6 +40,7 @@
       "categray": "development"
     },
     {
+      "id": 4,
       "image": "/mostPopular-Images/usersImages/image-4.jpg",
       "title": "Graphic Design Essentials: From Beginner to Pro Guide",
       "numLesson": 50,
@@ -49,6 +53,7 @@
       "categray": "design"
     },
     {
+      "id": 5,
       "image": "/mostPopular-Images/usersImages/image-5.jpg",
       "title": "Personal Finance & Smart Investment Strategies.",
       "numLesson": 24,
@@ -61,6 +66,7 @@
       "categray": "business"
     },
     {
+      "id": 6,
       "image": "/mostPopular-Images/usersImages/image-6.jpg",
       "title": "AI & Machine Learning: A Complete Guide Training",
       "numLesson": 40,
